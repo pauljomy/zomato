@@ -9,23 +9,22 @@ body {
     font-family: "Smythe", system-ui;
 }
 
-.container {
+.container,
+.item-container {
     width: 600px;
     margin: 0 auto;
-    background-color: lightcoral;
 }
 
 .header {
     color: white;
-    width: 100% 100%;
+    width: 100%;
     height: 168px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("./img/header.png");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("img/header.png");
+    background-size: cover;
+    margin-bottom: 30px;
 }
 
 .title,
@@ -40,4 +39,57 @@ body {
 
 .tag-line {
     font-size: 22px;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: auto 30px 30px 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.item-img {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-detail {
+    line-height: 30px;
+}
+
+.item-title {
+    font-weight: 400;
+}
+
+.item-ingredients {
+    color: #8b8b8b;
+}
+
+.item-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.add-item-btn {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+button {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d2d2d2;
+    cursor: pointer;
 }
