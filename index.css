@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Smythe", system-ui;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+.header {
+    color: white;
+    width: 100% 100%;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("./img/header.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title,
+.tag-line {
+    padding-left: 50px;
+}
+
+.title {
+    font-size: 39px;
+    font-weight: 600;
+}
+
+.tag-line {
+    font-size: 22px;
+}
