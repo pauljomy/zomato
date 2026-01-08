@@ -2,7 +2,9 @@ import { menuArray } from "./data.js";
 
 const itemContainer = document.getElementById("item-container");
 
-console.log("menuArray:", menuArray);
+const addItem = document.getElementById("add-item");
+
+// addItem.addEventListener("click", () => {});
 
 function render(items) {
   let feedHTML = "";
